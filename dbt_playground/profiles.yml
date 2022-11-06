@@ -1,0 +1,23 @@
+dbt_playground:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: demo_password
+      dbname: postgres
+      schema: postgres
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgres
+      pass: demo_password
+      dbname: postgres
+      schema: postgres
+
+  target: dev
