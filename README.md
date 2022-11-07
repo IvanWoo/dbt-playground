@@ -132,6 +132,13 @@ postgres=# select * from my_first_dbt_model;
 pdm run dbt test --profiles-dir .
 ```
 
+### check data lineage
+
+```sh
+pdm run dbt docs generate --profiles-dir .
+pdm run dbt docs serve --profiles-dir .
+```
+
 ## cleanup
 
 tl;dr: `./scripts/down.sh`
@@ -145,3 +152,4 @@ kubectl delete namespace dbt-demo
 ## references
 
 - [Getting hands-on with DBT — Data Build Tool](https://towardsdatascience.com/getting-hands-on-with-dbt-data-build-tool-a157d4151bbc)
+- [luchonaveiro/dbt-postgres-tutorial](https://github.com/luchonaveiro/dbt-postgres-tutorial)
